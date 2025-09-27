@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://cy7e77b1ksws7"]
+
+[ext_resource type="Script" uid="uid://cdoy6jhf4kdcw" path="res://cake(2).gd" id="1_0vq4w"]
+[ext_resource type="Texture2D" uid="uid://hmyo8al58sdc" path="res://CAKE (2).png" id="1_exyji"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_exyji"]
+radius = 32.202484
+
+[node name="Area2D" type="Area2D"]
+script = ExtResource("1_0vq4w")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+
+[node name="Cake(2)" type="Sprite2D" parent="."]
+position = Vector2(1, -6)
+texture = ExtResource("1_exyji")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_exyji")
